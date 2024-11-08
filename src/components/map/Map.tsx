@@ -25,6 +25,7 @@ const Map: React.FC = () => {
 
     map.on('load', () => {
       // Insert the layer beneath any symbol layer.
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const layers: any = map.getStyle().layers;
 
       let labelLayerId;
