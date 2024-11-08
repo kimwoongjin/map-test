@@ -18,7 +18,10 @@ const Map: React.FC = () => {
     });
 
     // setLngLat([경도, 위도])
-    new maplibregl.Marker().setLngLat([127.1025, 37.5126]).addTo(map);
+    new maplibregl.Marker()
+      .setLngLat([127.1025, 37.5126])
+      .addTo(map)
+      .setDraggable(true);
 
     map.on('load', () => {
       // Insert the layer beneath any symbol layer.
