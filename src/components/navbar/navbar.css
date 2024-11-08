@@ -1,12 +1,31 @@
 .heading {
   margin: 0;
-  padding: 0px;
-  background-color: black;
-  color: white;
+  padding: 10px;
+  background-color: #ececec;
+  color: black;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .heading > h1 {
-  padding: 20px;
+  padding: 10px;
   margin: 0;
+}
+
+.nav {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_item {
+  color: gray;
+  cursor: pointer;
+}
+
+.nav_item:hover,
+.nav_item:focus {
+  color: black;
 }
